@@ -23,8 +23,9 @@ app.get("/", (req, res) => {
     current_day: dayNames[dayOfWeek],
     utc_time,
     track: "backend",
-    github_file_url: "https://github.com/chima2474/backendstageone/app.js",
-    github_repo_url: "https://github.com/chima2474/backendstageone",
+    github_file_url:
+      "https://github.com/Chima2474/backendstageone/blob/main/app.js",
+    github_repo_url: "https://github.com/Chima2474/backendstageone",
   });
 });
 
