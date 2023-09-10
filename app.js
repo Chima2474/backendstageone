@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
   const { slack_name, track } = req.query;
 
   const currentTime = new Date();
-  utc_time = Math.floor(currentTime.getTime() / 1000);
+  utc_time = currentTime.toISOString();
   const dayOfWeek = currentTime.getDay();
 
   // Define an array of day names for human-readable output
